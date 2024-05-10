@@ -35,3 +35,9 @@ model = load_model("Intel_images_model.h5")
 # Acknowledgments
 Intel Image Classification Dataset on Kaggle
 TensorFlow and Keras documentation
+# Accessing other files
+I have provided the model and the train and the testing folders in the name of other files, please fell free to use that.
+# Requirements
+I have also attached a requirements file, which includes the basic requirements for this task.
+# Image Classification
+The file santhohs-image-classification.ipynb has the complete code for this task.
