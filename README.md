@@ -9,3 +9,29 @@ Keras (>= 2.0)
 Matplotlib
 NumPy
 Pandas (for data preprocessing, if needed)
+# Dataset
+The dataset used for training and testing the model is the Intel Image Classification dataset available on Kaggle. It includes labeled images divided into training and test sets, organized into folders based on different image categories.
+
+# Usage
+1) Clone the Repository
+git clone https://github.com/your-username/image-classification.git
+cd image-classification
+2) Install Dependencies
+pip install -r requirements.txt
+3) Data Preparation
+Download the Intel Image Classification dataset and extract it.
+Update the train_path and test_path variables in the Python script (image_classification.py) to point to the extracted dataset paths.
+4) Training the ModelRun the following command to train the CNN model:
+python image_classification.py
+The script will preprocess the data, build the CNN model, train it using the training set, and evaluate its performance on the test set.
+5) Model Evaluation: After training, the script will display plots showing training/validation loss and accuracy. Additionally, the model will be evaluated on both training and test datasets.
+6) Inference (Prediction): To make predictions on new images, use the prediction function provided in the script. Update the testing_image variable with the path to the new image.
+testing_image = "path/to/your/image.jpg"
+prediction(testing_image, actual_label="glacier")
+This will load the trained model and display the prediction result for the specified image.
+7) Model Saving and LoadingThe trained model will be saved as Intel_images_model.h5 after training. You can load the saved model using the following code:
+from tensorflow.keras.models import load_model
+model = load_model("Intel_images_model.h5")
+# Acknowledgments
+Intel Image Classification Dataset on Kaggle
+TensorFlow and Keras documentation
