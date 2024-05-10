@@ -40,4 +40,4 @@ I have provided the model and the train and the testing folders in the name of o
 # Requirements
 I have also attached a requirements file, which includes the basic requirements for this task.
 # Image Classification
-The file santhohs-image-classification.ipynb has the complete code for this task.
+The file santhosh-image-classification.ipynb has the complete code for this task.
